@@ -1,4 +1,5 @@
 const fs = require("fs");
+let input = fs.readFileSync("./d1.txt").toString();
 const nMap = {
   one: '1',
   two: '2',
@@ -10,7 +11,13 @@ const nMap = {
   eight: '8',
   nine: '9',
 };
-let input = fs.readFileSync("./d1.txt").toString();
+// let input = `two1nine
+// eightwothree
+// abcone2threexyz
+// xtwone3four
+// 4nineeightseven2
+// zoneight234
+// 7pqrstsixteen`
 let lines = input.split("\n");
 let sum = 0;
 for (const line of lines) {
